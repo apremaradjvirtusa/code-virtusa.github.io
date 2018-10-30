@@ -1,0 +1,726 @@
+/*
+|---------------------------------------------
+| 2.0 - Main navbar
+|---------------------------------------------
+*/
+
+.smm-navbar {
+    border: 0 !important;
+	&.style-one {
+		background-color: $color-magenta;
+		ul.navbar-nav > li > a {
+			color: $color-white;
+		}
+		ul.navbar-nav > li > a:hover,
+		ul.navbar-nav > li.has-menu-item-submenu:hover > a {
+		    color: $color-white !important;
+		}
+		.ml-auto {
+		    margin-right: auto!important;
+		    margin-left: 200px;
+		}
+		.navbar-nav-login i {
+			padding-right: 6px;
+		}
+	}
+	&.style-two {
+		background: $color-blue;
+		ul.navbar-nav > li > a {
+			color: $color-white;
+		}
+		ul.navbar-nav > li > a:hover,
+		ul.navbar-nav > li.has-menu-item-submenu:hover > a {
+		    color: $color-white !important;
+		}
+	}
+	&.style-three {
+		background-color: #180f5d;
+		ul.navbar-nav > li > a {
+			color: $color-white;
+		}
+		ul.navbar-nav > li > a:hover,
+		ul.navbar-nav > li.has-menu-item-submenu:hover > a {
+		    color: $color-white !important;
+		}
+		.ml-auto {
+		    margin-right: auto!important;
+		    margin-left: 200px;
+		}
+		.navbar-nav-login i {
+			padding-right: 6px;
+		}
+	}
+	&.style-four {
+		background-color: #3c8ec8;
+		ul.navbar-nav > li > a {
+			color: $color-white;
+		}
+		ul.navbar-nav > li > a:hover,
+		ul.navbar-nav > li.has-menu-item-submenu:hover > a {
+		    color: $color-white !important;
+		}
+		.ml-auto {
+		    margin-right: auto!important;
+		    margin-left: 200px;
+		}
+		.navbar-nav-login i {
+			padding-right: 6px;
+		}
+	}
+	&.style-five {
+		background-color: #5198cc;
+		ul.navbar-nav > li > a {
+			color: $color-white;
+		}
+		ul.navbar-nav > li > a:hover,
+		ul.navbar-nav > li.has-menu-item-submenu:hover > a {
+		    color: $color-white !important;
+		}
+		.ml-auto {
+		    margin-right: auto!important;
+		    margin-left: 200px;
+		}
+		.navbar-nav-login i {
+			padding-right: 6px;
+		}
+	}
+	&.style-six {
+		background: none;
+		ul.navbar-nav > li > a {
+			color: #808080;
+		}
+		ul.navbar-nav > li > a:hover,
+		ul.navbar-nav > li.has-menu-item-submenu:hover > a {
+		    color: #808080 !important;
+		}
+		.navbar-toggler {
+			background: #ff6fa0;
+		}
+	}
+	&.style-seven {
+		background: none;
+		ul.navbar-nav > li > a {
+			color: #808080;
+		}
+		ul.navbar-nav > li > a:hover,
+		ul.navbar-nav > li.has-menu-item-submenu:hover > a {
+		    color: #808080 !important;
+		}
+		.ml-auto {
+		    margin-right: auto!important;
+		    margin-left: 200px;
+		}
+		.navbar-nav-login {
+			border: 1px solid #6d6ae0;
+		    border-radius: 3px;
+		    padding: 0 7px;
+		    li a {
+	    	    padding: 10px 9px !important;
+	    	    color: #6d6ae0 !important; 
+		    }
+		    li span {
+    	        padding: 12px 0 !important;
+    			display: block;
+    			color: #6d6ae0 !important; 
+		    }
+		}
+	}
+}
+
+.inner-megamenu {
+    background: transparent !important;
+}
+.inner-page-title {
+	margin-top: -100px;
+    padding: 212px 0 130px 0 !important; 
+}
+@media (max-width: 992px) {
+	.navbar.smm-navbar .navbar-toggler {
+		padding-top: 1px;
+	}
+	.smm-navbar {
+		padding: 18px !important;
+	    .navbar-nav-login li a {
+			color: #2c3e50 !important;
+	    }
+	    &.style-seven {
+	    	.navbar-nav-login {
+				border: 0 !important;
+			    border-radius: 0;
+			    padding: 10px 0 !important;
+			    li a {
+		    	    padding: 10px 0px !important;
+		    	    color: #6d6ae0 !important; 
+	    	        color: #2c3e50 !important;
+			    }
+			    .login-slash {
+			    	display: none !important;
+			    }
+			}
+		}
+    }
+    .navbar.smm-navbar ul.navbar-nav li.has-menu-item-megamenu > a.slicknav .icon:after,
+    .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu > a.slicknav .icon:after {
+	    margin-left: 12px;
+	    height: 26px;
+	}
+	.navbar.smm-navbar ul.navbar-nav li.has-menu-item-megamenu > a.slicknav .icon:before,
+	.navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu > a.slicknav .icon:before {
+	    width: 26px;
+	    height: 2px;
+	    margin-bottom: -14px;
+	}
+}
+@media (max-width: 992px) {
+	.inner-page-title {
+	    padding: 175px 0 90px 0 !important;
+	}
+}
+
+
+/*
+|---------------------------------------------
+| 3.0 - Banner
+|---------------------------------------------
+*/
+.saasage-banner {
+	background: $color-blue;
+	padding: 160px 0 220px 0;
+	position: relative;
+	.banner-content {
+		padding: 68px 0;
+		.banner-title {
+			color: $color-white;
+			margin-bottom: 48px;
+			font-family: $font-helvetica;
+			line-height: 26px;
+			small {
+				font-size: 12px;
+				color: rgba($color-white, .9);
+				line-height: 26px;
+			}
+		}
+		p {
+			color: rgba($color-white, .9);
+			margin-bottom: 20px;
+			font-family: $font-opensans;
+			line-height: 24px;
+		}
+		.btn-white {
+			margin-top: 26px;
+		}		
+	}
+	.angle {
+		color: $color-white;
+    	font-size: 14px;
+   	 	height: 50px;
+    	width: 50px;
+    	border: 1px solid $color-white;
+    	border-radius: 50px;
+    	line-height: 52px;
+    	position: absolute;
+    	left: 50%;
+    	margin-left: -25px;
+    	top: 110px;
+	}
+	/* Skype Banner */
+	&.style-two {
+		background: url(../images/skype/bg/01.png);
+		background-size: cover;
+	    background-position: 100% 83%;
+	    background-repeat: no-repeat;
+	    padding: 110px 0 135px 0;
+		.banner-content {
+			.title {
+				font-size: 60px;
+				color: $color-white;
+				font-family: $font-helvetica;
+				font-weight: 400;
+				line-height: 72px;
+				margin-bottom: 15px;
+			}
+			h3 {
+				font-family: $font-helvetica;
+				font-weight: 400;
+				line-height: 72px;
+				color: $color-white; 
+				margin-bottom: 3px;
+			}
+			.btn-white {
+				color: $color-sky;
+			}
+		}
+	}
+	&.style-three {
+		padding: 140px 0 178px 0;
+		background: url(../images/paypal/bg/image.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		.banner-content {
+			.title {
+			    font-size: 60px;
+    			line-height: 72px;
+    			color: $color-white;
+    			font-family: $font-helvetica;
+    			font-weight: 400;
+    			margin-bottom: 31px;
+			}
+			p {
+				color: $color-white;
+				font-size: 18px;
+				line-height: 28px;
+				margin-bottom: 40px;
+			}
+			.btn-paypal {
+				background: $color-white;
+				padding: 10px 37px;
+				color: $color-sky;
+				font-family: $font-opensans;
+				line-height: 24px;
+				border-radius: 50px;
+			}			
+		}
+	}
+	&.style-four {
+		background: url(../images/asana/bg/01.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 86px 0 135px 0;
+		.banner-content .title {
+			font-size: 60px;
+			font-weight: 400;
+			font-family: $font-helvetica;
+			line-height: 72px;
+			color: $color-white;
+			margin-bottom: 40px;
+		}
+		.banner-content p {
+		    color: rgba(255, 255, 255, 0.9);
+		    margin-bottom: 20px;
+		    font-family: "Open Sans", sans-serif;
+		    line-height: 28px;
+		    margin-bottom: 37px;
+		    font-size: 18px;
+		}
+		.subscribe .input-group .form-control {
+			font-size: 14px;
+			height: 45px;
+			border: 0;
+		    padding-left: 23px;
+			&:focus {
+				border-color: 0;
+		    	box-shadow: 0;
+			}
+		}
+		.subscribe .input-group .input-group-text {
+			color: $color-white;
+			background: $color-security;
+			border-color: none;
+		    box-shadow: 0;
+		    font-size: 14px;
+			border: 0;
+  			outline: 0 !important;
+			cursor: pointer;
+		    padding: 0 24px;
+		    @include transition(all, .3s, ease);
+		    &:hover {
+		    	background-color: rgba( 238, 71, 88, 0.85);
+		    }
+		}
+	}
+	&.style-five {
+		background: $color-deep-blue;
+		background-position: center;
+		background-size: cover;
+		padding: 0;
+		
+		.banner-content {
+			padding-top: 205px;			
+			.banner-title {
+				font-size: 50px;
+				font-weight: 400;
+				font-family: $font-helvetica;
+				line-height: 60px;
+				margin-bottom: 32px;
+			}
+			p {
+				margin-bottom: 34px;
+			}
+		}
+		.banner-thumb {
+			padding-top: 75px;
+    		padding-bottom: 100px;
+		}
+	}
+	&.style-six {
+		background: $color-bluis-white;
+		padding: 138px 0 0 0;
+		.section-title {
+			.entry-title {
+				margin-bottom: 39px;
+			}
+			p {
+				margin-bottom: 37px;
+			}
+		}
+		.button {
+			margin-bottom: 118px;
+			.btn-linear {
+				border: 1px solid $color-blue-linear;
+				color: $color-blue-linear;
+			    padding: 10px 25px;
+			    border-radius: 2px;
+			    &:active,
+			    &:focus,
+				&:hover {
+					color: $color-white;
+					background: $color-blue-linear;
+					border: 1px solid $color-blue-linear;
+				}
+			}
+		}
+		.or {
+			margin: 0 30px;
+			position: relative;
+			color: $color-blue-linear;
+			&:before {
+				position: absolute;
+				content: '';
+				display: block;
+				height: 1px;
+				width: 10px;
+				background: $color-blue-linear;
+			    top: 11px;
+    			right: 20px;
+			}
+			&:after {
+				position: absolute;
+				content: '';
+				display: block;
+				height: 1px;
+				width: 10px;
+				background: $color-blue-linear;
+			    top: 11px;
+    			left: 20px;
+			}
+		}
+	}
+	&.style-seven {
+		background: $color-bluis-white;
+	    padding: 24px 0 80px 0;
+		.banner-content {
+			padding-top: 120px;
+			.banner-title {
+				color: $color-pink;
+				line-height: 60px;
+				font-family: $font-helvetica;
+				font-weight: 300;
+				margin-bottom: 32px;
+			}
+			p {
+				color: $color-gray;
+				margin-bottom: 45px;
+			}
+			.btn-pink {
+				border: 1px solid $color-pink;
+				color: $color-pink;
+				margin-right: 21px;
+				padding: 0 30px;
+				font-size: 14px;
+				height: 45px;
+				line-height: 43px;
+				&:hover {
+					color: $color-white;
+					border-radius: 2px;
+					background-image: -moz-linear-gradient( 0deg, rgb(255,153,143) 0%, rgb(255,111,160) 100%);
+					background-image: -webkit-linear-gradient( 0deg, rgb(255,153,143) 0%, rgb(255,111,160) 100%);
+					background-image: -ms-linear-gradient( 0deg, rgb(255,153,143) 0%, rgb(255,111,160) 100%);
+					box-shadow: 5px 8.66px 20px 0px rgba( 0, 0, 0, .1);
+					i {
+					    border: 1px solid $color-white;
+					}
+				}
+				i {
+					margin-left: 8px;
+					height: 15px;
+				    width: 15px;
+				    border: 1px solid $color-pink;
+				    border-style: solid;
+				    border-radius: 50%;
+				    line-height: 13px;
+				    text-align: center;
+				}
+			}
+		}
+	}
+}
+/* Responsive Banner bootstrap */
+@media all and (max-width: 1200px) {
+	.saasage-banner .banner-content .banner-title {
+		font-size: 65px;
+	}
+	.saasage-banner.style-five{
+		.banner-content .banner-title {
+			font-size: 40px;
+		}
+	}
+}
+@media all and (max-width: 991px) {
+	.saasage-banner .banner-content .banner-title {
+		font-size: 44px;
+	}
+	.saasage-banner {
+		padding: 100px 0 250px 0;
+		text-align: center;
+		&.style-five {
+		    padding: 100px 0 150px 0 !important;
+		    .banner-content {
+	    	    padding-top: 0;
+	    	    .banner-title {
+    	    	    font-size: 35px;
+    	    	    line-height: 47px;
+	    	    }
+		    }
+		}
+	}
+	.saasage-banner .banner-thumb {
+		display: none;
+	} 
+	.saasage-banner .banner-content {
+	    padding: 0;
+	}
+	.saasage-banner.style-seven .banner-content {
+	    padding-top: 0;
+	}
+	.saasage-banner.style-seven .banner-content .btn-pink {
+		margin-bottom: 10px;
+	}
+}
+@media all and (max-width: 767px) {
+	.banner-bootstrap .banner-title {
+	    margin-bottom: 25px !important;
+	}
+}
+@media all and (max-width: 576px) {
+	.saasage-banner .banner-content .btn-white {
+		margin-bottom: 80px;
+	}
+	.saasage-banner {
+		padding: 100px 0 100px 0 !important;
+	}
+	.saasage-banner {
+    	position: relative;
+	}	
+	.saasage-banner .angle {
+    	color: #ffffff;
+    	font-size: 14px;
+    	height: 50px;
+    	width: 50px;
+    	border: 1px solid #ffffff;
+    	border-radius: 50px;
+    	line-height: 50px;
+    	position: absolute;
+    	left: 50%;
+    	margin-left: -25px;
+    	top: 5px !important;
+	}
+}
+/* skype-banner-responsive */
+@media all and (max-width: 992px) {
+	.saasage-banner.style-two .banner-content .title {
+		font-size: 40px !important;
+		line-height: 50px !important;
+	}
+	.saasage-banner.style-two .banner-content h3 {
+		font-size: 30px;
+	}
+}
+@media all and (max-width: 576px) {
+	.saasage-banner.style-two .banner-content .title {
+	    font-size: 30px;
+    	line-height: 45px;
+   	 	margin-bottom: 25px;
+	}
+	.saasage-banner.style-two .banner-content h3 {
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 5px;
+	}
+}
+@media all and (max-width: 425px) {
+	.saasage-banner.style-two .banner-content .title {
+	    line-height: 43px;
+    	font-size: 29px;
+    	margin-bottom: 35px;
+	}
+	.saasage-banner.style-two .banner-content h3 {
+	    font-size: 16px;
+    	line-height: 25px;
+    	margin-bottom: 5px;
+	}
+}
+@media (max-width: 375px) {
+	.banner-content .title {
+        font-size: 29px;
+		line-height: 45px;
+    	margin-bottom: 40px;
+	}
+	.saasage-banner.style-two .banner-content h3 {
+        font-size: 18px;
+		line-height: 22px;
+    	margin-bottom: 5px;
+	}
+}
+/* paypal-banner-responsive */
+@media (max-width: 1024px) {
+	.banner-paypal .banner-content {
+	    padding: 0;
+	}
+}
+@media (max-width: 991px) {
+	.saasage-banner.style-three {
+		padding: 100px 0 120px 0 !important;
+		.banner-content .title {
+	    	font-size: 40px !important;
+		    line-height: 60px;
+	    	margin-bottom: 15px !important;
+		}
+	}
+	
+}
+@media (max-width: 767px) {
+	.saasage-banner.style-three {
+		.banner-content {
+			.title {
+		    	font-size: 34px !important;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+	.work-section .section-title .title {
+    	font-size: 28px !important;
+	}
+	.sass-or {
+	    display: block;
+		margin: 10px 0;
+	}
+	
+}
+/* asana-banner-responsive */
+@media all and (max-width: 991px) {
+	.banner-content .title {
+    	font-size: 45px !important;
+    	line-height: 60px !important;
+	}
+	.banner-content p br{
+		display: none;
+	}
+	.banner-asana {
+	    padding: 100px 0 105px 0 !important;
+	}
+}
+/* software-banner-responsive */
+@media all and (max-width: 576px) {
+	.section-title .entry-title {
+		line-height: 45px;
+	}
+	.saasage-banner.style-six .button {
+	    margin-bottom: 20px;
+	}
+}
+/* app-landing-banner-responsive */
+@media all and (max-width: 1200px) {
+	.saasage-banner .banner-content .banner-title {
+    	font-size: 36px;
+    	line-height: 50px;
+	}
+	.saasage-banner.style-seven .banner-content .btn-pink {
+		margin-right: 15px;
+	}
+}
+@media all and (max-width: 768px) {
+	.saasage-banner .banner-content .banner-title {
+		font-size: 45px;
+    	line-height: 70px;
+	}
+	.saasage-banner.style-seven {
+		padding-bottom: 100px!important;
+	}
+}
+@media all and (max-width: 320px) {
+	.saasage-banner.style-six .section-title .entry-title {
+	    font-size: 32px !important;
+	} 
+}
+/*
+|---------------------------------------------
+| 16.0 - page title
+|---------------------------------------------
+*/
+.page-title {
+	background: url(../images/hosting/about-us/bg/01.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 112px 0 130px 0;
+	h2 {
+		font-family: $font-helvetica;
+		font-weight: 600;
+		line-height: 55px;
+		color: $color-white;
+	}
+	nav {
+		display: inline-block;		
+		.breadcrumb {
+			background: none;
+			color: $color-white;
+			li {
+				a {
+					color: $color-white;
+				}
+			}
+		}
+	}
+}
+
+//banner style 
+@media all and (max-width: 1024px){
+	.banner-asana p br {
+		display: none;
+	}
+}
+@media all and (max-width: 991px){
+	.banner-app-landing h2 {
+	    width: 70%;
+	    margin: 0 auto;
+	    padding-top: 65px !important;
+	}
+	.banner-hosting h2 {
+	    width: 70%;
+	    margin: 0 auto;
+	}
+	.banner-skype h1 {
+	    width: 70%;
+	    margin: 0 auto;
+	}
+
+	.saasage-banner .banner-content {
+		text-align: center !important;
+	}
+}
+@media all and (max-width: 767px) {
+	.banner-app-landing h2 {
+		font-size: 40px !important;
+	    line-height: 50px !important;
+	    padding-top: 0 !important;
+	}
+	.banner-skype h1,
+	.banner-hosting h2,
+	.banner-app-landing h2 {
+	    width: 100%;
+	}
+}

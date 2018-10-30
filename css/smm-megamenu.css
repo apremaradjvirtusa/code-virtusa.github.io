@@ -1,0 +1,1151 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 26px; }
+
+.navbar.smm-navbar {
+  position: relative;
+  background: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0;
+  /** Desktop **/
+  /** Mobile **/ }
+  .navbar.smm-navbar .navbar-toggler {
+    width: 45px;
+    height: 45px;
+    background: #1265e3;
+    padding: 0;
+    border-radius: 50%;
+    outline: none; }
+    .navbar.smm-navbar .navbar-toggler .line {
+      width: 24px;
+      height: 2px;
+      background-color: #ecf0f1;
+      display: block;
+      margin: 4px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+  .navbar.smm-navbar .navbar-toggler:hover {
+    cursor: pointer; }
+  .navbar.smm-navbar button.navbar-toggler[aria-expanded="true"] .line:nth-child(2) {
+    opacity: 0; }
+  .navbar.smm-navbar button.navbar-toggler[aria-expanded="true"] .line:nth-child(1) {
+    -webkit-transform: translateY(6px) rotate(45deg);
+    -ms-transform: translateY(6px) rotate(45deg);
+    -o-transform: translateY(6px) rotate(45deg);
+    transform: translateY(6px) rotate(45deg); }
+  .navbar.smm-navbar button.navbar-toggler[aria-expanded="true"] .line:nth-child(3) {
+    -webkit-transform: translateY(-6px) rotate(-45deg);
+    -ms-transform: translateY(-6px) rotate(-45deg);
+    -o-transform: translateY(-6px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg); }
+  @media all and (min-width: 992px) {
+    .navbar.smm-navbar {
+      /** Hover **/
+      /** animate css support **/
+      /** end animate css support **/ }
+      .navbar.smm-navbar ul.navbar-nav > li {
+        display: inline-block; }
+        .navbar.smm-navbar ul.navbar-nav > li > a {
+          display: block;
+          padding: 38px 15px;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 24px;
+          color: #2c3e50; }
+          .navbar.smm-navbar ul.navbar-nav > li > a:hover {
+            color: #2678ff;
+            text-decoration: none; }
+      .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu {
+        position: relative; }
+        .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu ul.sub-menu {
+          min-width: 170px;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          list-style: none;
+          padding: 25px 0;
+          -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.05);
+          background: #ffffff;
+          z-index: 9999;
+          display: none; }
+          .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu ul.sub-menu a {
+            display: block;
+            padding: 5px 25px;
+            color: #808080;
+            -moz-transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
+            .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu ul.sub-menu a:hover {
+              color: #2678ff;
+              text-decoration: none;
+              margin-left: 2px; }
+          .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu ul.sub-menu ul.sub-menu {
+            top: 0;
+            left: auto;
+            right: 100%; }
+      .navbar.smm-navbar ul.navbar-nav li.has-menu-item-megamenu {
+        position: static; }
+        .navbar.smm-navbar ul.navbar-nav li.has-menu-item-megamenu .mega-menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          display: none;
+          z-index: 9999; }
+          .navbar.smm-navbar ul.navbar-nav li.has-menu-item-megamenu .mega-menu .smm-widget-area {
+            border-top: 1px solid #f0f0f0;
+            background: #ffffff;
+            -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.05); }
+      .navbar.smm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-submenu {
+        position: relative; }
+        .navbar.smm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-submenu ul.sub-menu {
+          display: block;
+          visibility: hidden;
+          opacity: 0;
+          -webkit-transform: rotateX(90deg);
+          -moz-transform: rotateX(90deg);
+          -ms-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+          -webkit-transform-origin: top;
+          -moz-transform-origin: top;
+          -ms-transform-origin: top;
+          transform-origin: top;
+          -o-transition: 0.3s;
+          transition: 0.3s;
+          -ms-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -webkit-transition: 0.3s; }
+        .navbar.smm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+          visibility: visible;
+          opacity: 1;
+          -webkit-transform: rotateX(0);
+          -moz-transform: rotateX(0);
+          -ms-transform: rotateX(0);
+          transform: rotateX(0); }
+        .navbar.smm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-submenu:hover > a {
+          color: #6fa2f6; }
+      .navbar.smm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-megamenu .mega-menu {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transform: rotateX(90deg);
+        -moz-transform: rotateX(90deg);
+        -ms-transform: rotateX(90deg);
+        transform: rotateX(90deg);
+        -webkit-transform-origin: top;
+        -moz-transform-origin: top;
+        -ms-transform-origin: top;
+        transform-origin: top;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        -ms-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -webkit-transition: 0.3s; }
+      .navbar.smm-navbar.smmNavbar-defaultEffect ul.navbar-nav li.has-menu-item-megamenu:hover > .mega-menu {
+        visibility: visible;
+        opacity: 1;
+        -webkit-transform: rotateX(0);
+        -moz-transform: rotateX(0);
+        -ms-transform: rotateX(0);
+        transform: rotateX(0); }
+      .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu:hover > a {
+        color: #2678ff;
+        text-decoration: none; }
+      .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block; }
+      .navbar.smm-navbar ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block; }
+      .navbar.smm-navbar.smmNavbar-bounce ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: bounce 0.3s ease-in;
+        -webkit-animation: bounce 0.3s ease-in;
+        animation: bounce 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounce ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: bounce 0.3s ease-in;
+        -webkit-animation: bounce 0.3s ease-in;
+        animation: bounce 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-flash ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: flash 0.3s ease-in;
+        -webkit-animation: flash 0.3s ease-in;
+        animation: flash 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-flash ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: flash 0.3s ease-in;
+        -webkit-animation: flash 0.3s ease-in;
+        animation: flash 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-pulse ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: pulse 0.3s ease-in;
+        -webkit-animation: pulse 0.3s ease-in;
+        animation: pulse 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-pulse ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: pulse 0.3s ease-in;
+        -webkit-animation: pulse 0.3s ease-in;
+        animation: pulse 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rubberBand ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rubberBand 0.3s ease-in;
+        -webkit-animation: rubberBand 0.3s ease-in;
+        animation: rubberBand 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rubberBand ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rubberBand 0.3s ease-in;
+        -webkit-animation: rubberBand 0.3s ease-in;
+        animation: rubberBand 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-shake ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: shake 0.3s ease-in;
+        -webkit-animation: shake 0.3s ease-in;
+        animation: shake 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-shake ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: shake 0.3s ease-in;
+        -webkit-animation: shake 0.3s ease-in;
+        animation: shake 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-swing ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: swing 0.3s ease-in;
+        -webkit-animation: swing 0.3s ease-in;
+        animation: swing 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-swing ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: swing 0.3s ease-in;
+        -webkit-animation: swing 0.3s ease-in;
+        animation: swing 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-tada ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: tada 0.3s ease-in;
+        -webkit-animation: tada 0.3s ease-in;
+        animation: tada 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-tada ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: tada 0.3s ease-in;
+        -webkit-animation: tada 0.3s ease-in;
+        animation: tada 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-wobble ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: wobble 0.3s ease-in;
+        -webkit-animation: wobble 0.3s ease-in;
+        animation: wobble 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-wobble ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: wobble 0.3s ease-in;
+        -webkit-animation: wobble 0.3s ease-in;
+        animation: wobble 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-jello ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: jello 0.3s ease-in;
+        -webkit-animation: jello 0.3s ease-in;
+        animation: jello 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-jello ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: jello 0.3s ease-in;
+        -webkit-animation: jello 0.3s ease-in;
+        animation: jello 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceIn ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: bounceIn 0.3s ease-in;
+        -webkit-animation: bounceIn 0.3s ease-in;
+        animation: bounceIn 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceIn ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: bounceIn 0.3s ease-in;
+        -webkit-animation: bounceIn 0.3s ease-in;
+        animation: bounceIn 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceInDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: bounceInDown 0.3s ease-in;
+        -webkit-animation: bounceInDown 0.3s ease-in;
+        animation: bounceInDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceInDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: bounceInDown 0.3s ease-in;
+        -webkit-animation: bounceInDown 0.3s ease-in;
+        animation: bounceInDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceInLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: bounceInLeft 0.3s ease-in;
+        -webkit-animation: bounceInLeft 0.3s ease-in;
+        animation: bounceInLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceInLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: bounceInLeft 0.3s ease-in;
+        -webkit-animation: bounceInLeft 0.3s ease-in;
+        animation: bounceInLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceInRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: bounceInRight 0.3s ease-in;
+        -webkit-animation: bounceInRight 0.3s ease-in;
+        animation: bounceInRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceInRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: bounceInRight 0.3s ease-in;
+        -webkit-animation: bounceInRight 0.3s ease-in;
+        animation: bounceInRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceInUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: bounceInUp 0.3s ease-in;
+        -webkit-animation: bounceInUp 0.3s ease-in;
+        animation: bounceInUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceInUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: bounceInUp 0.3s ease-in;
+        -webkit-animation: bounceInUp 0.3s ease-in;
+        animation: bounceInUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceOut ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: bounceOut 0.3s ease-in;
+        -webkit-animation: bounceOut 0.3s ease-in;
+        animation: bounceOut 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceOut ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: bounceOut 0.3s ease-in;
+        -webkit-animation: bounceOut 0.3s ease-in;
+        animation: bounceOut 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceOutDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: bounceOutDown 0.3s ease-in;
+        -webkit-animation: bounceOutDown 0.3s ease-in;
+        animation: bounceOutDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceOutDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: bounceOutDown 0.3s ease-in;
+        -webkit-animation: bounceOutDown 0.3s ease-in;
+        animation: bounceOutDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceOutLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: bounceOutLeft 0.3s ease-in;
+        -webkit-animation: bounceOutLeft 0.3s ease-in;
+        animation: bounceOutLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceOutLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: bounceOutLeft 0.3s ease-in;
+        -webkit-animation: bounceOutLeft 0.3s ease-in;
+        animation: bounceOutLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceOutRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: bounceOutRight 0.3s ease-in;
+        -webkit-animation: bounceOutRight 0.3s ease-in;
+        animation: bounceOutRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceOutRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: bounceOutRight 0.3s ease-in;
+        -webkit-animation: bounceOutRight 0.3s ease-in;
+        animation: bounceOutRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceOutUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: bounceOutUp 0.3s ease-in;
+        -webkit-animation: bounceOutUp 0.3s ease-in;
+        animation: bounceOutUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-bounceOutUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: bounceOutUp 0.3s ease-in;
+        -webkit-animation: bounceOutUp 0.3s ease-in;
+        animation: bounceOutUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeIn ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeIn 0.3s ease-in;
+        -webkit-animation: fadeIn 0.3s ease-in;
+        animation: fadeIn 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeIn ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeIn 0.3s ease-in;
+        -webkit-animation: fadeIn 0.3s ease-in;
+        animation: fadeIn 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeInDown 0.3s ease-in;
+        -webkit-animation: fadeInDown 0.3s ease-in;
+        animation: fadeInDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeInDown 0.3s ease-in;
+        -webkit-animation: fadeInDown 0.3s ease-in;
+        animation: fadeInDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInDownBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeInDownBig 0.3s ease-in;
+        -webkit-animation: fadeInDownBig 0.3s ease-in;
+        animation: fadeInDownBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInDownBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeInDownBig 0.3s ease-in;
+        -webkit-animation: fadeInDownBig 0.3s ease-in;
+        animation: fadeInDownBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeInLeft 0.3s ease-in;
+        -webkit-animation: fadeInLeft 0.3s ease-in;
+        animation: fadeInLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeInLeft 0.3s ease-in;
+        -webkit-animation: fadeInLeft 0.3s ease-in;
+        animation: fadeInLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInLeftBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeInLeftBig 0.3s ease-in;
+        -webkit-animation: fadeInLeftBig 0.3s ease-in;
+        animation: fadeInLeftBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInLeftBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeInLeftBig 0.3s ease-in;
+        -webkit-animation: fadeInLeftBig 0.3s ease-in;
+        animation: fadeInLeftBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeInRight 0.3s ease-in;
+        -webkit-animation: fadeInRight 0.3s ease-in;
+        animation: fadeInRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeInRight 0.3s ease-in;
+        -webkit-animation: fadeInRight 0.3s ease-in;
+        animation: fadeInRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInRightBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeInRightBig 0.3s ease-in;
+        -webkit-animation: fadeInRightBig 0.3s ease-in;
+        animation: fadeInRightBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInRightBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeInRightBig 0.3s ease-in;
+        -webkit-animation: fadeInRightBig 0.3s ease-in;
+        animation: fadeInRightBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeInUp 0.3s ease-in;
+        -webkit-animation: fadeInUp 0.3s ease-in;
+        animation: fadeInUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeInUp 0.3s ease-in;
+        -webkit-animation: fadeInUp 0.3s ease-in;
+        animation: fadeInUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInUpBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeInUpBig 0.3s ease-in;
+        -webkit-animation: fadeInUpBig 0.3s ease-in;
+        animation: fadeInUpBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeInUpBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeInUpBig 0.3s ease-in;
+        -webkit-animation: fadeInUpBig 0.3s ease-in;
+        animation: fadeInUpBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOut ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeOut 0.3s ease-in;
+        -webkit-animation: fadeOut 0.3s ease-in;
+        animation: fadeOut 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOut ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeOut 0.3s ease-in;
+        -webkit-animation: fadeOut 0.3s ease-in;
+        animation: fadeOut 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeOutDown 0.3s ease-in;
+        -webkit-animation: fadeOutDown 0.3s ease-in;
+        animation: fadeOutDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeOutDown 0.3s ease-in;
+        -webkit-animation: fadeOutDown 0.3s ease-in;
+        animation: fadeOutDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutDownBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeOutDownBig 0.3s ease-in;
+        -webkit-animation: fadeOutDownBig 0.3s ease-in;
+        animation: fadeOutDownBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutDownBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeOutDownBig 0.3s ease-in;
+        -webkit-animation: fadeOutDownBig 0.3s ease-in;
+        animation: fadeOutDownBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeOutLeft 0.3s ease-in;
+        -webkit-animation: fadeOutLeft 0.3s ease-in;
+        animation: fadeOutLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeOutLeft 0.3s ease-in;
+        -webkit-animation: fadeOutLeft 0.3s ease-in;
+        animation: fadeOutLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutLeftBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeOutLeftBig 0.3s ease-in;
+        -webkit-animation: fadeOutLeftBig 0.3s ease-in;
+        animation: fadeOutLeftBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutLeftBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeOutLeftBig 0.3s ease-in;
+        -webkit-animation: fadeOutLeftBig 0.3s ease-in;
+        animation: fadeOutLeftBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeOutRight 0.3s ease-in;
+        -webkit-animation: fadeOutRight 0.3s ease-in;
+        animation: fadeOutRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeOutRight 0.3s ease-in;
+        -webkit-animation: fadeOutRight 0.3s ease-in;
+        animation: fadeOutRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutRightBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeOutRightBig 0.3s ease-in;
+        -webkit-animation: fadeOutRightBig 0.3s ease-in;
+        animation: fadeOutRightBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutRightBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeOutRightBig 0.3s ease-in;
+        -webkit-animation: fadeOutRightBig 0.3s ease-in;
+        animation: fadeOutRightBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeOutUp 0.3s ease-in;
+        -webkit-animation: fadeOutUp 0.3s ease-in;
+        animation: fadeOutUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeOutUp 0.3s ease-in;
+        -webkit-animation: fadeOutUp 0.3s ease-in;
+        animation: fadeOutUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutUpBig ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: fadeOutUpBig 0.3s ease-in;
+        -webkit-animation: fadeOutUpBig 0.3s ease-in;
+        animation: fadeOutUpBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-fadeOutUpBig ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: fadeOutUpBig 0.3s ease-in;
+        -webkit-animation: fadeOutUpBig 0.3s ease-in;
+        animation: fadeOutUpBig 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-flip ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: flip 0.3s ease-in;
+        -webkit-animation: flip 0.3s ease-in;
+        animation: flip 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-flip ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: flip 0.3s ease-in;
+        -webkit-animation: flip 0.3s ease-in;
+        animation: flip 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-flipInX ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: flipInX 0.3s ease-in;
+        -webkit-animation: flipInX 0.3s ease-in;
+        animation: flipInX 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-flipInX ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: flipInX 0.3s ease-in;
+        -webkit-animation: flipInX 0.3s ease-in;
+        animation: flipInX 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-flipInY ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: flipInY 0.3s ease-in;
+        -webkit-animation: flipInY 0.3s ease-in;
+        animation: flipInY 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-flipInY ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: flipInY 0.3s ease-in;
+        -webkit-animation: flipInY 0.3s ease-in;
+        animation: flipInY 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-flipOutX ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: flipOutX 0.3s ease-in;
+        -webkit-animation: flipOutX 0.3s ease-in;
+        animation: flipOutX 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-flipOutX ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: flipOutX 0.3s ease-in;
+        -webkit-animation: flipOutX 0.3s ease-in;
+        animation: flipOutX 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-flipOutY ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: flipOutY 0.3s ease-in;
+        -webkit-animation: flipOutY 0.3s ease-in;
+        animation: flipOutY 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-flipOutY ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: flipOutY 0.3s ease-in;
+        -webkit-animation: flipOutY 0.3s ease-in;
+        animation: flipOutY 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-lightSpeedIn ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: lightSpeedIn 0.3s ease-in;
+        -webkit-animation: lightSpeedIn 0.3s ease-in;
+        animation: lightSpeedIn 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-lightSpeedIn ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: lightSpeedIn 0.3s ease-in;
+        -webkit-animation: lightSpeedIn 0.3s ease-in;
+        animation: lightSpeedIn 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-lightSpeedOut ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: lightSpeedOut 0.3s ease-in;
+        -webkit-animation: lightSpeedOut 0.3s ease-in;
+        animation: lightSpeedOut 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-lightSpeedOut ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: lightSpeedOut 0.3s ease-in;
+        -webkit-animation: lightSpeedOut 0.3s ease-in;
+        animation: lightSpeedOut 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateIn ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rotateIn 0.3s ease-in;
+        -webkit-animation: rotateIn 0.3s ease-in;
+        animation: rotateIn 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateIn ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rotateIn 0.3s ease-in;
+        -webkit-animation: rotateIn 0.3s ease-in;
+        animation: rotateIn 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateInDownLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rotateInDownLeft 0.3s ease-in;
+        -webkit-animation: rotateInDownLeft 0.3s ease-in;
+        animation: rotateInDownLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateInDownLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rotateInDownLeft 0.3s ease-in;
+        -webkit-animation: rotateInDownLeft 0.3s ease-in;
+        animation: rotateInDownLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateInDownRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rotateInDownRight 0.3s ease-in;
+        -webkit-animation: rotateInDownRight 0.3s ease-in;
+        animation: rotateInDownRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateInDownRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rotateInDownRight 0.3s ease-in;
+        -webkit-animation: rotateInDownRight 0.3s ease-in;
+        animation: rotateInDownRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateInUpLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rotateInUpLeft 0.3s ease-in;
+        -webkit-animation: rotateInUpLeft 0.3s ease-in;
+        animation: rotateInUpLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateInUpLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rotateInUpLeft 0.3s ease-in;
+        -webkit-animation: rotateInUpLeft 0.3s ease-in;
+        animation: rotateInUpLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateInUpRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rotateInUpRight 0.3s ease-in;
+        -webkit-animation: rotateInUpRight 0.3s ease-in;
+        animation: rotateInUpRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateInUpRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rotateInUpRight 0.3s ease-in;
+        -webkit-animation: rotateInUpRight 0.3s ease-in;
+        animation: rotateInUpRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateOut ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rotateOut 0.3s ease-in;
+        -webkit-animation: rotateOut 0.3s ease-in;
+        animation: rotateOut 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateOut ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rotateOut 0.3s ease-in;
+        -webkit-animation: rotateOut 0.3s ease-in;
+        animation: rotateOut 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateOutDownLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rotateOutDownLeft 0.3s ease-in;
+        -webkit-animation: rotateOutDownLeft 0.3s ease-in;
+        animation: rotateOutDownLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateOutDownLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rotateOutDownLeft 0.3s ease-in;
+        -webkit-animation: rotateOutDownLeft 0.3s ease-in;
+        animation: rotateOutDownLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateOutDownRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rotateOutDownRight 0.3s ease-in;
+        -webkit-animation: rotateOutDownRight 0.3s ease-in;
+        animation: rotateOutDownRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateOutDownRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rotateOutDownRight 0.3s ease-in;
+        -webkit-animation: rotateOutDownRight 0.3s ease-in;
+        animation: rotateOutDownRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateOutUpLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rotateOutUpLeft 0.3s ease-in;
+        -webkit-animation: rotateOutUpLeft 0.3s ease-in;
+        animation: rotateOutUpLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateOutUpLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rotateOutUpLeft 0.3s ease-in;
+        -webkit-animation: rotateOutUpLeft 0.3s ease-in;
+        animation: rotateOutUpLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateOutUpRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rotateOutUpRight 0.3s ease-in;
+        -webkit-animation: rotateOutUpRight 0.3s ease-in;
+        animation: rotateOutUpRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rotateOutUpRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rotateOutUpRight 0.3s ease-in;
+        -webkit-animation: rotateOutUpRight 0.3s ease-in;
+        animation: rotateOutUpRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideInUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: slideInUp 0.3s ease-in;
+        -webkit-animation: slideInUp 0.3s ease-in;
+        animation: slideInUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideInUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: slideInUp 0.3s ease-in;
+        -webkit-animation: slideInUp 0.3s ease-in;
+        animation: slideInUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideInDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: slideInDown 0.3s ease-in;
+        -webkit-animation: slideInDown 0.3s ease-in;
+        animation: slideInDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideInDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: slideInDown 0.3s ease-in;
+        -webkit-animation: slideInDown 0.3s ease-in;
+        animation: slideInDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideInLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: slideInLeft 0.3s ease-in;
+        -webkit-animation: slideInLeft 0.3s ease-in;
+        animation: slideInLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideInLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: slideInLeft 0.3s ease-in;
+        -webkit-animation: slideInLeft 0.3s ease-in;
+        animation: slideInLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideInRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: slideInRight 0.3s ease-in;
+        -webkit-animation: slideInRight 0.3s ease-in;
+        animation: slideInRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideInRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: slideInRight 0.3s ease-in;
+        -webkit-animation: slideInRight 0.3s ease-in;
+        animation: slideInRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideOutUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: slideOutUp 0.3s ease-in;
+        -webkit-animation: slideOutUp 0.3s ease-in;
+        animation: slideOutUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideOutUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: slideOutUp 0.3s ease-in;
+        -webkit-animation: slideOutUp 0.3s ease-in;
+        animation: slideOutUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideOutDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: slideOutDown 0.3s ease-in;
+        -webkit-animation: slideOutDown 0.3s ease-in;
+        animation: slideOutDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideOutDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: slideOutDown 0.3s ease-in;
+        -webkit-animation: slideOutDown 0.3s ease-in;
+        animation: slideOutDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideOutLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: slideOutLeft 0.3s ease-in;
+        -webkit-animation: slideOutLeft 0.3s ease-in;
+        animation: slideOutLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideOutLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: slideOutLeft 0.3s ease-in;
+        -webkit-animation: slideOutLeft 0.3s ease-in;
+        animation: slideOutLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideOutRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: slideOutRight 0.3s ease-in;
+        -webkit-animation: slideOutRight 0.3s ease-in;
+        animation: slideOutRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-slideOutRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: slideOutRight 0.3s ease-in;
+        -webkit-animation: slideOutRight 0.3s ease-in;
+        animation: slideOutRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomIn ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: zoomIn 0.3s ease-in;
+        -webkit-animation: zoomIn 0.3s ease-in;
+        animation: zoomIn 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomIn ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: zoomIn 0.3s ease-in;
+        -webkit-animation: zoomIn 0.3s ease-in;
+        animation: zoomIn 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomInDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: zoomInDown 0.3s ease-in;
+        -webkit-animation: zoomInDown 0.3s ease-in;
+        animation: zoomInDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomInDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: zoomInDown 0.3s ease-in;
+        -webkit-animation: zoomInDown 0.3s ease-in;
+        animation: zoomInDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomInLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: zoomInLeft 0.3s ease-in;
+        -webkit-animation: zoomInLeft 0.3s ease-in;
+        animation: zoomInLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomInLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: zoomInLeft 0.3s ease-in;
+        -webkit-animation: zoomInLeft 0.3s ease-in;
+        animation: zoomInLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomInRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: zoomInRight 0.3s ease-in;
+        -webkit-animation: zoomInRight 0.3s ease-in;
+        animation: zoomInRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomInRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: zoomInRight 0.3s ease-in;
+        -webkit-animation: zoomInRight 0.3s ease-in;
+        animation: zoomInRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomInUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: zoomInUp 0.3s ease-in;
+        -webkit-animation: zoomInUp 0.3s ease-in;
+        animation: zoomInUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomInUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: zoomInUp 0.3s ease-in;
+        -webkit-animation: zoomInUp 0.3s ease-in;
+        animation: zoomInUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomOut ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: zoomOut 0.3s ease-in;
+        -webkit-animation: zoomOut 0.3s ease-in;
+        animation: zoomOut 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomOut ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: zoomOut 0.3s ease-in;
+        -webkit-animation: zoomOut 0.3s ease-in;
+        animation: zoomOut 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomOutDown ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: zoomOutDown 0.3s ease-in;
+        -webkit-animation: zoomOutDown 0.3s ease-in;
+        animation: zoomOutDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomOutDown ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: zoomOutDown 0.3s ease-in;
+        -webkit-animation: zoomOutDown 0.3s ease-in;
+        animation: zoomOutDown 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomOutLeft ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: zoomOutLeft 0.3s ease-in;
+        -webkit-animation: zoomOutLeft 0.3s ease-in;
+        animation: zoomOutLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomOutLeft ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: zoomOutLeft 0.3s ease-in;
+        -webkit-animation: zoomOutLeft 0.3s ease-in;
+        animation: zoomOutLeft 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomOutRight ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: zoomOutRight 0.3s ease-in;
+        -webkit-animation: zoomOutRight 0.3s ease-in;
+        animation: zoomOutRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomOutRight ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: zoomOutRight 0.3s ease-in;
+        -webkit-animation: zoomOutRight 0.3s ease-in;
+        animation: zoomOutRight 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomOutUp ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: zoomOutUp 0.3s ease-in;
+        -webkit-animation: zoomOutUp 0.3s ease-in;
+        animation: zoomOutUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-zoomOutUp ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: zoomOutUp 0.3s ease-in;
+        -webkit-animation: zoomOutUp 0.3s ease-in;
+        animation: zoomOutUp 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-hinge ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: hinge 0.3s ease-in;
+        -webkit-animation: hinge 0.3s ease-in;
+        animation: hinge 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-hinge ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: hinge 0.3s ease-in;
+        -webkit-animation: hinge 0.3s ease-in;
+        animation: hinge 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-jackInTheBox ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: jackInTheBox 0.3s ease-in;
+        -webkit-animation: jackInTheBox 0.3s ease-in;
+        animation: jackInTheBox 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-jackInTheBox ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: jackInTheBox 0.3s ease-in;
+        -webkit-animation: jackInTheBox 0.3s ease-in;
+        animation: jackInTheBox 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rollln ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rollln 0.3s ease-in;
+        -webkit-animation: rollln 0.3s ease-in;
+        animation: rollln 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rollln ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rollln 0.3s ease-in;
+        -webkit-animation: rollln 0.3s ease-in;
+        animation: rollln 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rollOut ul.navbar-nav li.has-menu-item-submenu:hover > ul.sub-menu {
+        display: block;
+        -moz-animation: rollOut 0.3s ease-in;
+        -webkit-animation: rollOut 0.3s ease-in;
+        animation: rollOut 0.3s ease-in; }
+      .navbar.smm-navbar.smmNavbar-rollOut ul.navbar-nav > li.has-menu-item-megamenu:hover .mega-menu {
+        display: block;
+        -moz-animation: rollOut 0.3s ease-in;
+        -webkit-animation: rollOut 0.3s ease-in;
+        animation: rollOut 0.3s ease-in; } }
+  @media all and (max-width: 992px) {
+    .navbar.smm-navbar .navbar-brand {
+      margin-left: 15px; }
+    .navbar.smm-navbar .navbar-toggler {
+      margin-right: 15px; }
+    .navbar.smm-navbar .navbar-collapse {
+      border-top: 1px solid #f0f0f0;
+      border-bottom: 1px solid #f0f0f0;
+      padding-left: 15px;
+      padding-right: 15px;
+      background: #FBFBFB;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      z-index: 9999; }
+    .navbar.smm-navbar ul.navbar-nav {
+      padding-top: 10px;
+      padding-bottom: 10px; }
+      .navbar.smm-navbar ul.navbar-nav li {
+        padding: 7px 0; }
+        .navbar.smm-navbar ul.navbar-nav li a {
+          font-family: "Poppins", sans-serif;
+          font-size: 14px;
+          line-height: 26px;
+          color: #2c3e50; }
+        .navbar.smm-navbar ul.navbar-nav li:last-child {
+          border-bottom: 0; }
+      .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu {
+        position: relative; }
+        .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu > a.slicknav {
+          display: block !important; }
+          .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu > a.slicknav .icon {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 18px; }
+            .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu > a.slicknav .icon:before {
+              content: '';
+              display: block;
+              width: 30px;
+              height: 2px;
+              background: #2c3e50;
+              margin-bottom: -15px; }
+            .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu > a.slicknav .icon:after {
+              content: '';
+              display: block;
+              width: 2px;
+              margin-left: 15px;
+              height: 30px;
+              background: #2c3e50;
+              -moz-transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out; }
+        .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu ul.sub-menu {
+          display: none;
+          list-style: none; }
+        .navbar.smm-navbar ul.navbar-nav li.has-menu-item-submenu.sub-open > a.slicknav .icon:after {
+          opacity: 0;
+          -ms-transform: rotate(90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(90deg);
+          /* Safari 3-8 */
+          transform: rotate(90deg);
+          -moz-transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+      .navbar.smm-navbar ul.navbar-nav li.has-menu-item-megamenu {
+        position: relative; }
+        .navbar.smm-navbar ul.navbar-nav li.has-menu-item-megamenu > a.slicknav {
+          display: block !important; }
+          .navbar.smm-navbar ul.navbar-nav li.has-menu-item-megamenu > a.slicknav .icon {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 18px; }
+            .navbar.smm-navbar ul.navbar-nav li.has-menu-item-megamenu > a.slicknav .icon:before {
+              content: '';
+              display: block;
+              width: 30px;
+              height: 2px;
+              background: #2c3e50;
+              margin-bottom: -15px; }
+            .navbar.smm-navbar ul.navbar-nav li.has-menu-item-megamenu > a.slicknav .icon:after {
+              content: '';
+              display: block;
+              width: 2px;
+              margin-left: 15px;
+              height: 30px;
+              background: #2c3e50;
+              -moz-transition: all 0.3s ease-in-out;
+              -webkit-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out; }
+        .navbar.smm-navbar ul.navbar-nav li.has-menu-item-megamenu .mega-menu {
+          display: none;
+          list-style: none; }
+        .navbar.smm-navbar ul.navbar-nav li.has-menu-item-megamenu.sub-open > a.slicknav .icon:after {
+          opacity: 0;
+          -ms-transform: rotate(90deg);
+          /* IE 9 */
+          -webkit-transform: rotate(90deg);
+          /* Safari 3-8 */
+          transform: rotate(90deg);
+          -moz-transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; } }
+
+.smm-widget-area {
+  padding: 35px 30px 0 30px; }
+  .smm-widget-area .smm-pagination .prev,
+  .smm-widget-area .smm-pagination .next {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    font-size: 14px;
+    color: #2678ff;
+    border-radius: 2px;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .smm-widget-area .smm-pagination .prev.active, .smm-widget-area .smm-pagination .prev:hover,
+    .smm-widget-area .smm-pagination .next.active,
+    .smm-widget-area .smm-pagination .next:hover {
+      background: #2678ff;
+      border-color: #2678ff;
+      color: #ffffff; }
+  .smm-widget-area .widget {
+    margin-bottom: 30px; }
+    .smm-widget-area .widget .smm-btn {
+      font-family: "Poppins", sans-serif;
+      font-size: 10px;
+      font-weight: 400;
+      color: #ffffff;
+      padding-left: 8px;
+      padding-right: 8px;
+      border-radius: 2px;
+      margin-left: 10px; }
+    .smm-widget-area .widget.smm-widget-list h4.smm-widget-title {
+      font-family: "Poppins", sans-serif;
+      color: #2c3e50;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 600; }
+      .smm-widget-area .widget.smm-widget-list h4.smm-widget-title i {
+        margin-right: 10px; }
+    .smm-widget-area .widget.smm-widget-list ul {
+      list-style: none;
+      padding-left: 0; }
+      .smm-widget-area .widget.smm-widget-list ul li a {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+        color: #808080;
+        -moz-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        .smm-widget-area .widget.smm-widget-list ul li a i {
+          margin-right: 8px; }
+        .smm-widget-area .widget.smm-widget-list ul li a:hover {
+          color: #2678ff;
+          text-decoration: none;
+          margin-left: 2px; }
+    .smm-widget-area .widget.smm-widget-feature .icon {
+      margin-bottom: 15px; }
+      .smm-widget-area .widget.smm-widget-feature .icon i {
+        font-size: 50px;
+        color: #2678ff; }
+    .smm-widget-area .widget.smm-widget-feature .title {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      color: #2c3e50;
+      font-weight: 400; }
+    .smm-widget-area .widget.smm-widget-feature p {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #808080;
+      margin-bottom: 10px; }
+    .smm-widget-area .widget.smm-widget-feature a {
+      font-family: "Poppins", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: #2c3e50; }
+      .smm-widget-area .widget.smm-widget-feature a i {
+        -moz-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+      .smm-widget-area .widget.smm-widget-feature a:hover {
+        text-decoration: none;
+        color: #2678ff; }
+        .smm-widget-area .widget.smm-widget-feature a:hover i {
+          margin-left: 5px; }
+    .smm-widget-area .widget.smm-blog-post .entry-content {
+      padding: 10px 20px 20px 20px;
+      -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.08);
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.08); }
+      .smm-widget-area .widget.smm-blog-post .entry-content .cat {
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+        font-weight: 400;
+        color: #2678ff; }
+      .smm-widget-area .widget.smm-blog-post .entry-content .entry-title {
+        font-family: "Poppins", sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #2c3e50;
+        margin-bottom: 5px; }
+      .smm-widget-area .widget.smm-blog-post .entry-content .meta {
+        font-family: "Poppins", sans-serif;
+        line-height: 16px;
+        font-weight: 400;
+        font-size: 12px;
+        color: #a1a1a1; }
+        .smm-widget-area .widget.smm-blog-post .entry-content .meta a {
+          color: #a1a1a1; }

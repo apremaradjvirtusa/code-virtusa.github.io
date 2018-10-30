@@ -1,0 +1,51 @@
+// border radius
+@mixin border-radius($radius) {
+	 -webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+		 -ms-border-radius: $radius;
+			 border-radius: $radius;
+}
+// transition
+@mixin transition($option, $time, $style: ease-in-out){
+	-webkit-transition: $option $time $style;
+	   -moz-transition: $option $time $style;
+			transition: $option $time $style; 
+}
+// transform
+@mixin transform($value){
+	-webkit-transform: $value;
+	   -moz-transform: $value;
+	    -ms-transform: $value;
+			transform: $value; 
+}
+
+// all fonts related mixin
+@mixin raleway($value) {
+	font-family: $raleway;
+	font-weight: $value;
+}
+@mixin opensans($value) {
+	font-family: $opensans;
+	font-weight: $value;
+}
+@mixin font_fswhc($family, $size, $weight, $height, $color){
+	font-family: $family;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+	color: $color;
+}
+
+
+// flexbox center
+@mixin flexbox_center(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// background opacity
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}

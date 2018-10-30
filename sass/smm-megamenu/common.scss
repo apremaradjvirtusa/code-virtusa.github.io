@@ -1,0 +1,34 @@
+// Color
+$color-border: #f0f0f0;
+$color-gray: #808080;
+$color-gray-two: #a1a1a1;
+$color-black: #2c3e50;
+$color-primary: #2678ff;
+
+
+// font
+$font-poppins : 'Poppins', sans-serif;
+
+// mixings
+@mixin animation($effect, $time, $type) {
+	   -moz-animation: $effect $time $type;
+	-webkit-animation: $effect $time $type;
+			animation: $effect $time $type;
+}
+@mixin transition($effect, $time, $type) {
+	   -moz-transition: $effect $time $type;
+	-webkit-transition: $effect $time $type;
+			transition: $effect $time $type;
+}
+
+@mixin transform($value){
+	-ms-transform: $value; /* IE 9 */
+-webkit-transform: $value; /* Safari 3-8 */
+		transform: $value;
+}
+
+body {
+	font-family: $font-poppins;
+					font-size: 14px;
+					line-height: 26px;
+}

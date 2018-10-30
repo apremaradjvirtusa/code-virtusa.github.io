@@ -1,0 +1,141 @@
+.smm-widget-area {
+	padding: 35px 30px 0 30px;
+	.smm-pagination {
+		.prev,
+		.next {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+			text-align: center;
+			border: 1px solid $color-border;
+			font-size: 14px;
+			color: $color-primary;
+			border-radius: 2px;
+			@include transition(all, .3s, ease);
+			&.active,
+			&:hover {
+				background: $color-primary;
+				border-color: $color-primary;
+				color: #ffffff;
+			}
+
+		}
+	}
+	.widget {
+		margin-bottom: 30px;
+		.smm-btn {
+			font-family: $font-poppins;
+			font-size: 10px;
+			font-weight: 400;
+			color: #ffffff;
+			padding-left: 8px;
+			padding-right: 8px;
+			border-radius: 2px;
+			margin-left: 10px;
+		}
+		&.smm-widget-list {
+			h4.smm-widget-title {
+				font-family: $font-poppins;
+				color: $color-black;
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: 600;
+				i {
+					margin-right: 10px;
+				}
+			}
+			ul {
+				list-style: none;
+				padding-left: 0;
+				li {
+					a {
+						font-family: $font-poppins;
+						font-size: 14px;
+						font-weight: 400;
+						line-height: 28px;
+						color: $color-gray;
+						@include transition(all, .3s, ease);
+						i {
+							margin-right: 8px;
+						}
+						&:hover {
+							color: $color-primary;
+							text-decoration: none;
+							margin-left: 2px;
+						}
+					}
+				}
+			}
+		}
+		&.smm-widget-feature {
+			.icon {
+				margin-bottom: 15px;
+				i {
+					font-size: 50px;
+					color: $color-primary;
+				}
+			}
+			.title {
+				font-family: $font-poppins;
+				font-size: 16px;
+				color: $color-black;
+				font-weight: 400;
+			}
+			p {
+				font-family: $font-poppins;
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: 400;
+				color: $color-gray;
+				margin-bottom: 10px;
+			}
+			a {
+				font-family: $font-poppins;
+				font-size: 14px;
+				font-weight: 400;
+				color: $color-black;
+				i {
+					@include transition(all, .3s, ease);
+				}
+				&:hover {
+					text-decoration: none;
+					color: $color-primary;
+					i {
+						margin-left: 5px;
+					}
+				}
+			}
+		}
+		&.smm-blog-post {
+			.entry-content {
+				padding: 10px 20px 20px 20px;
+  				box-shadow: 0px 0px 15px 0px rgba( 0, 0, 0, 0.08 );
+				.cat {
+					font-family: $font-poppins;
+					font-size: 12px;
+					font-weight: 400;
+					color: $color-primary;
+				}
+				.entry-title {
+					font-family: $font-poppins;
+					font-size: 16px;
+					line-height: 24px;
+					font-weight: 400;
+					color: $color-black;
+					margin-bottom: 5px;
+				}
+				.meta {
+					font-family: $font-poppins;
+					line-height: 16px;
+					font-weight: 400;
+					font-size: 12px;
+					color: $color-gray-two;
+					a {
+						color: $color-gray-two;
+					}
+				}
+			}
+		}
+	}
+}
