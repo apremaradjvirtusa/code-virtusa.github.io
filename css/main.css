@@ -4025,7 +4025,8 @@ div.spinner i:nth-child(8) {
   .footer-section.style-four, .footer-section.style-five, .footer-section.style-six {
     background-color: #161d28;
     padding-bottom: 0;
-    padding: 98px 0 27px 0; }
+    /* padding: 98px 0 27px 0; changed to remove space*/ 
+    padding: 0px 0 27px 0; }
     .footer-section.style-four .widget, .footer-section.style-five .widget, .footer-section.style-six .widget {
       padding-bottom: 75px; }
     .footer-section.style-four .logo, .footer-section.style-five .logo, .footer-section.style-six .logo {
@@ -4362,3 +4363,7 @@ div.spinner i:nth-child(8) {
   .footer-section.style-six .copy-right p,
   .footer-section.style-three .copy-right .copyright p {
     margin-bottom: 25px !important; } }
+.logo{
+  width: 100%;
+height:40px;
+}

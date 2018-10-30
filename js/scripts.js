@@ -324,7 +324,30 @@
           scrollText: '<i class="fa fa-angle-up"></i>',
       });
 
-
+      $("#platform-nav").on('click',function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: $("#platforms").offset().top},
+            'slow');
+    });
+    $("#solutions-nav").on('click',function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: $("#solutions").offset().top},
+            'slow');
+    });
+    $("#tools-nav").on('click',function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: $("#tools").offset().top},
+            'slow');
+    });
+    $("#components-nav").on('click',function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: $("#components").offset().top},
+            'slow');
+    });
 });
  
 }(jQuery));
