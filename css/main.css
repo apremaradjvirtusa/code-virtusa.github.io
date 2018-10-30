@@ -1435,6 +1435,10 @@ div.spinner i:nth-child(8) {
 | bootstrap-intro-responsive
 |---------------------------------------------
 */
+/* Added for equal spacing */
+.intro-section .intro-single {
+  margin-bottom: 30px; }
+
 @media all and (max-width: 992px) {
   .intro-section .entry-content p br {
     display: none; }

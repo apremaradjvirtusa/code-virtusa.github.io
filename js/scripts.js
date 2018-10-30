@@ -324,7 +324,7 @@
           scrollText: '<i class="fa fa-angle-up"></i>',
       });
 
-      $("#platform-nav").on('click',function (e) {
+      $("#platforms-nav").on('click',function (e) {
         e.preventDefault();
         $('html,body').animate({
             scrollTop: $("#platforms").offset().top},
@@ -346,6 +346,12 @@
         e.preventDefault();
         $('html,body').animate({
             scrollTop: $("#components").offset().top},
+            'slow');
+    });
+    $("#frameworks-nav").on('click',function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: $("#frameworks").offset().top},
             'slow');
     });
 });
