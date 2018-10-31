@@ -1438,7 +1438,11 @@ div.spinner i:nth-child(8) {
 /* Added for equal spacing */
 .intro-section .intro-single {
   margin-bottom: 30px; }
-
+.banner-img{
+  float: right;
+  margin-top: -90px;
+  margin-bottom: 10px;
+}
 @media all and (max-width: 992px) {
   .intro-section .entry-content p br {
     display: none; }
