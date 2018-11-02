@@ -1,11 +1,11 @@
-#### Welcome to Virtusa Github Repository
+# Welcome to Virtusa Github Repository
 
-### Categories
+## Categories
 
-## Components
-## Platforms
-## Solutions
-## Frameworks
-## Tools
+### Components
+### Platforms
+### Solutions
+### Frameworks
+### Tools
 
 
