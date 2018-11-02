@@ -4375,3 +4375,7 @@ div.spinner i:nth-child(8) {
   width: 100%;
 height:40px;
 }
+.warning {
+  color:red ;
+  font-size: .8em;
+}
