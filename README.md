@@ -1,11 +1,11 @@
-## Welcome to Virtusa Github Repository
-
-Lorem Ipsum 
+#### Welcome to Virtusa Github Repository
 
 ### Categories
 
-# Components
-## Framework
-### Tools
+## Components
+## Platforms
+## Solutions
+## Frameworks
+## Tools
 
 
